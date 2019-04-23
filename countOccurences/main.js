@@ -17,3 +17,4 @@ function countOccurences(array, word) {
     }
     return count;
 }
+

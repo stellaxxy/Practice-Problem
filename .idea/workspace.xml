@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88a09e9b-86f5-4f0d-9ad2-81cdd16bfe63" name="Default Changelist" comment="" />
+    <list default="true" id="88a09e9b-86f5-4f0d-9ad2-81cdd16bfe63" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first practice/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/countOccurences/main.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,36 +22,48 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
-          <entry key="js" value="1" />
+          <entry key="js" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="JavaScript" value="1" />
+          <entry key="JavaScript" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="6" />
-          <entry key="js" value="178" />
+          <entry key="js" value="314" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="6" />
-          <entry key="JavaScript" value="178" />
+          <entry key="JavaScript" value="314" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/first practice/main.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/countOccurences/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="340">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wordLength/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -66,6 +81,7 @@
       <list>
         <option value="$PROJECT_DIR$/first practice/index.html" />
         <option value="$PROJECT_DIR$/first practice/main.js" />
+        <option value="$PROJECT_DIR$/wordLength/main.js" />
       </list>
     </option>
   </component>
@@ -92,11 +108,6 @@
             <path>
               <item name="Practice-Problems" type="b2602c69:ProjectViewProjectNode" />
               <item name="Practice-Problems" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Practice-Problems" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practice-Problems" type="462c0819:PsiDirectoryNode" />
-              <item name="first practice" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -132,15 +143,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556042766451</updated>
-      <workItem from="1556042767725" duration="1178000" />
+      <workItem from="1556042767725" duration="1852000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1178000" />
+    <option name="totallyTimeSpent" value="1852000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -174,10 +185,20 @@
     <entry file="file://$PROJECT_DIR$/first practice/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/first practice/main.js">
+    <entry file="file://$PROJECT_DIR$/countOccurences/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordLength/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
