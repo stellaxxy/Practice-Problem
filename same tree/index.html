@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript">
+        class BST {
+            constructor(array) {
+                this.head = this.makeTreeNode(array);
+            }
+
+            makeTreeNode(array) {
+                if (array.length === 0) {
+                    return null;
+                }
+                let middle = Math.floor(array.length / 2);
+                let node = {
+                    val: array[middle],
+                    left: this.makeTreeNode(array.slice(0, middle)),
+                    right: this.makeTreeNode(array.slice(middle + 1))
+                }
+                return node;
+            }
+        }
+
+        var isSameTree = function(p, q) {
+            if(p === null && q === null){
+                return true;
+            } else if(p === null || q === null) {
+                return false;
+            }
+
+            if(p.val === q.val){
+                if(isSameTree(p.left, q.left) && isSameTree(p.right, q.right)){
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                return false;
+            }
+        };
+    </script>
+</head>
+<body></body>
