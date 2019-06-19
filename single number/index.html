@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript">
+        var singleNumber = function(nums) {
+            while(nums.length > 1){
+                for(let index = 1; index < nums.length; index++){
+                    if(nums[0] === nums[index]){
+                        nums.splice(index, 1);
+                        nums.splice(0, 1);
+                        break;
+                    } else if(index === nums.length -1){
+                        return nums[0];
+                    }
+                }
+            }
+            return nums[0];
+        };
+    </script>
+</head>
+<body>
+
+</body>

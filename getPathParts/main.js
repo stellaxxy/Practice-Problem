@@ -7,7 +7,7 @@ return { protocol: 'http', host: 'localhost', port: 8000, path: '/happy/go/lucky
 
 function getPathParts(urlString){
     const urlArray = urlString.split('/');
-
+    console.log(urlArray);
     const urlObj = {};
 
     urlObj.protocol = urlArray[0].slice(0, urlArray[0].length - 1);

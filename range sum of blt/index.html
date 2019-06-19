@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript">
+        var rangeSumBST = function(root, L, R) {
+            for(let outIndex = 0; outIndex < root.length; outIndex++){
+                for(let index = 0; index < root.length-1; index++){
+                    if(root[index] > root[index+1]){
+                        let temp = root[index];
+                        root[index] = root[index+1];
+                        root[index+1] = temp;
+                    }
+                }
+            }
+            let bst = new BST(root);
+
+            let sum = bst.findingSum(bst.head, L, R);
+            return sum;
+        };
+
+
+        class BST {
+            constructor(array){
+                this.head = this.makeTreeNode(array);
+                this.sum = 0;
+            }
+            makeTreeNode(array){
+                if(array.length === 0){
+                    return null;
+                }
+                let middle = Math.floor(array.length / 2);
+                let node = {
+                    val: array[middle],
+                    left: this.makeTreeNode(array.slice(0, middle)),
+                    right: this.makeTreeNode(array.slice(middle+1))
+                }
+                return node;
+            }
+            findingSum(bstHead = this.head, L, R){
+                if(bstHead !== null && L < bstHead.val && bstHead.val < R){
+                    this.sum += bstHead.val;
+                    this.findingSum(bstHead.left, L, R);
+                    this.findingSum(bstHead.right, L, R);
+                } else if(bstHead !== null && bstHead.val <= L){
+                    if(bstHead.val === L){
+                        this.sum += bstHead.val;
+                    }
+                    this.findingSum(bstHead.right, L, R);
+                } else if(bstHead !== null && bstHead.val >= R){
+                    if(bstHead.val === R){
+                        this.sum += bstHead.val;
+                    }
+                    this.findingSum(bstHead.left, L, R);
+                } else if(bstHead === null){
+                    return null;
+                }
+                return this.sum;
+
+            }
+            /*
+            if(bstHead !== null && L < bstHead.val && bstHead.val < R){
+                    this.sum += bstHead.val;
+                    this.findingSum(bstHead.left, L, R);
+                    this.findingSum(bstHead.right, L, R);
+                } else if(bstHead !== null && bstHead.val <= L){
+                    this.findingSum(bstHead.right, L, R);
+                } else if(bstHead !== null && bstHead.val >= R){
+                    this.findingSum(bstHead.left, L, R);
+                } else if(bstHead === null){
+                    return null;
+                }
+
+
+                if(bstHead !== null && L <= bstHead.val && bstHead.val<= R){
+                    this.sum += bstHead.val;
+
+                } else if(bstHead === null) {
+                    return null;
+                }
+                let left = this.findingSum(bstHead.left, L, R);
+                let right = this.findingSum(bstHead.right, L, R);
+                return this.sum;
+             */
+        }
+    </script>
+</head>
+<body>
+
+</body>
