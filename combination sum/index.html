@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript">
+        var combinationSum = function(candidates, target, prevSum, prevResult) {
+            for(let i = 0; i < candidates.length - 1; i++){
+                for(let j = 0; j < candidates.length - 1; j++){
+                    if(candidates[j] > candidates[j + 1]){
+                        let temp = candidates[j];
+                        candidates[j] = candidates[j+1];
+                        candidates[j+1] = temp;
+                    }
+                }
+            }
+            debugger;
+            let solution = [];
+
+            for(let index = 0; index < candidates.length; index++){
+                let result = prevResult || [];
+                let sum = prevSum || 0;
+                sum += candidates[index];
+                if(sum <= target){
+                    result.push(candidates[index]);
+                    if(sum === target){
+                        solution.push(result.slice());
+                        result.splice(result.length-2, 2);
+                        break;
+                    } else {
+                        let arr = combinationSum(candidates.slice(index), target, sum, result);
+                        if(arr.length === 0 && index === candidates.length - 1){
+                            result.pop();
+                        } else if(arr.length !== 0 && index === candidates.length -1){
+                            result.pop();
+                        }
+                        arr.map(elem => {
+                            solution.push(elem.slice());
+                        })
+                    }
+                } else {
+                    result.pop();
+                    break;
+                }
+            }
+            return solution;
+        };
+
+
+    </script>
+</head>
+<body></body>

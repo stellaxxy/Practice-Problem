@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88a09e9b-86f5-4f0d-9ad2-81cdd16bfe63" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="88a09e9b-86f5-4f0d-9ad2-81cdd16bfe63" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,26 +19,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="5" />
+          <entry key="gitignore" value="1" />
+          <entry key="html" value="6" />
           <entry key="js" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="5" />
+          <entry key="HTML" value="6" />
           <entry key="JavaScript" value="11" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="372" />
+          <entry key="gitignore" value="6" />
+          <entry key="html" value="844" />
           <entry key="js" value="3502" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="372" />
+          <entry key="HTML" value="844" />
           <entry key="JavaScript" value="3502" />
+          <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
     </session>
@@ -48,10 +50,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/same tree/index.html">
+        <entry file="file://$PROJECT_DIR$/combination sum/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+            <state relative-caret-position="748">
+              <caret line="44" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="44" />
             </state>
           </provider>
         </entry>
@@ -79,6 +81,8 @@
         <option value="$PROJECT_DIR$/single number/index.html" />
         <option value="$PROJECT_DIR$/range sum of blt/index.html" />
         <option value="$PROJECT_DIR$/same tree/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/combination sum/index.html" />
       </list>
     </option>
   </component>
@@ -89,10 +93,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2674" />
-    <option name="y" value="1" />
-    <option name="width" value="2023" />
-    <option name="height" value="1442" />
+    <option name="x" value="691" />
+    <option name="y" value="6" />
+    <option name="width" value="1179" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -157,18 +161,18 @@
       <workItem from="1559857323767" duration="4438000" />
       <workItem from="1560374556878" duration="80000" />
       <workItem from="1560374679571" duration="5811000" />
-      <workItem from="1560913540756" duration="4542000" />
+      <workItem from="1560913540756" duration="14756000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38463000" />
+    <option name="totallyTimeSpent" value="48677000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2351" y="1" width="1156" height="824" extended-state="0" />
+    <frame x="554" y="6" width="942" height="824" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22313297" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.107466064" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -291,10 +295,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/same tree/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        <state relative-caret-position="595">
+          <caret line="38" column="10" lean-forward="true" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/combination sum/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="44" />
         </state>
       </provider>
     </entry>
