@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript">
+        var romanToInt = function(s) {
+            let isI = false;
+            let isX = false;
+            let isC = false;
+            let sum = 0;
+
+            for(let i = 0; i < s.length; i++){
+                switch(s[i]){
+                    case 'I':
+                        isI = true;
+                        sum += 1;
+                        break;
+                    case 'V':
+                        if(isI){
+                            sum += 4-1;
+                            isI = false;
+                        } else {
+                            sum += 5;
+                            isC = false;
+                            isX = false;
+                        }
+                        break;
+                    case 'X':
+                        if(isI){
+                            sum += 9-1;
+                            isI = false;
+                        } else {
+                            isX = true;
+                            sum += 10;
+                            isC = false;
+                        }
+                        break;
+                    case 'L':
+                        if(isX){
+                            sum += 40-10;
+                            isX = false;
+                        } else {
+                            sum += 50;
+                            isC = false;
+                            isI = false;
+                        }
+                        break;
+                    case 'C':
+                        if(isX){
+                            sum += 90-10;
+                            isX = false;
+                        } else {
+                            isC = true;
+                            sum += 100;
+                            isI = false;
+                        }
+                        break;
+                    case 'D':
+                        if(isC){
+                            sum += 400-100;
+                            isC = false;
+                        } else {
+                            sum += 500;
+                            isI = false;
+                            isX = false;
+                        }
+                        break;
+                    case 'M':
+                        if(isC){
+                            sum += 900-100;
+                            isC = false;
+                        } else {
+                            sum += 1000;
+                            isX = false;
+                            isI = false;
+                        }
+                }
+            }
+            return sum;
+        };
+    </script>
+</head>
+<body></body>
