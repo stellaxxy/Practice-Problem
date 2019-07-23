@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        var lengthOfLongestSubstring = function(s) {
+
+            if(s.length === 1){
+                return 1;
+            }
+            let substring = s[0];
+            let savedSub = '';
+            let same = false;
+            for(let i = 1; i < s.length; i++){
+                for(var j = 0; j < substring.length; j++){
+                    if(s[i] === substring[j]){
+                        same = true;
+                        break;
+                    }
+                }
+                if(same){
+                    if(savedSub === ''){
+                        savedSub = substring;
+                    } else {
+                        if(savedSub.length < substring.length){
+                            savedSub = substring;
+                        }
+                    }
+                    if(j === substring.length -1){
+                        substring = s[i];
+                    } else {
+                        substring = substring.slice(j+1) + s[i];
+                    }
+
+                    same = false;
+                } else {
+                    substring += s[i];
+                    if(i === s.length - 1 && savedSub === ''){
+                        savedSub = substring;
+                    } else if(savedSub !== '' && savedSub.length < substring.length) {
+                        savedSub = substring;
+                    }
+                }
+            }
+            return savedSub.length;
+        };
+    </script>
+</head>
+<body></body>
