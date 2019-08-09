@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88a09e9b-86f5-4f0d-9ad2-81cdd16bfe63" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="88a09e9b-86f5-4f0d-9ad2-81cdd16bfe63" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,13 +24,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="html" value="16" />
+          <entry key="html" value="17" />
           <entry key="js" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="16" />
+          <entry key="HTML" value="17" />
           <entry key="JavaScript" value="11" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
@@ -40,13 +38,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="6" />
-          <entry key="html" value="1795" />
+          <entry key="html" value="1844" />
           <entry key="js" value="3502" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1795" />
+          <entry key="HTML" value="1844" />
           <entry key="JavaScript" value="3502" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
@@ -56,10 +54,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rotate-image/index.html">
+        <entry file="file://$PROJECT_DIR$/longest-common-prefix/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+            <state relative-caret-position="566">
+              <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -99,6 +97,7 @@
         <option value="$PROJECT_DIR$/longest substring without repeating characters/index.html" />
         <option value="$PROJECT_DIR$/LetterCombinationsOfPhoneNumber/index.html" />
         <option value="$PROJECT_DIR$/rotate-image/index.html" />
+        <option value="$PROJECT_DIR$/longest-common-prefix/index.html" />
       </list>
     </option>
   </component>
@@ -191,12 +190,12 @@
       <workItem from="1562476876564" duration="13306000" />
       <workItem from="1563295045198" duration="6938000" />
       <workItem from="1564901631397" duration="849000" />
-      <workItem from="1565250306779" duration="3229000" />
+      <workItem from="1565250306779" duration="4307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78129000" />
+    <option name="totallyTimeSpent" value="79207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2338" y="0" width="1034" height="831" extended-state="0" />
@@ -410,6 +409,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/longest-common-prefix/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
         </state>
       </provider>
     </entry>

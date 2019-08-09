@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript">
+        /**
+         * @param {string[]} strs
+         * @return {string}
+         */
+        var longestCommonPrefix = function(strs) {
+            let prefix = '';
+
+            if(strs.length === 1){
+                return strs[0];
+            }
+
+            for(let index = 0; index < strs.length-1; index++){
+                let length = null;
+                length = strs[index].length < strs[index+1].length ? strs[index].length : strs[index+1].length;
+
+                if(index > 0 && prefix === ""){
+                    return "";
+                }
+
+                if(length === 0){
+                    return ""
+                }
+
+                for(let letterIndex = 0; letterIndex < length; letterIndex++){
+                    if(index === 0){
+                        if(strs[index][letterIndex] === strs[index+1][letterIndex]){
+                            prefix += strs[index][letterIndex];
+                        } else {
+                            break;
+                        }
+                    } else {
+                        if(prefix[letterIndex] !== strs[index+1][letterIndex]){
+                            prefix = prefix.substring(0, letterIndex);
+                            break;
+                        } else if(prefix[letterIndex] === strs[index+1][letterIndex] && letterIndex+1 === length){
+                            prefix = prefix.substring(0,letterIndex+1);
+                        }
+                    }
+                }
+            }
+
+            return prefix;
+        };
+    </script>
+</head>
+<body></body>
