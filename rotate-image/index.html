@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript">
+        /**
+         * @param {number[][]} matrix
+         * @return {void} Do not return anything, modify matrix in-place instead.
+         */
+        var rotate = function(matrix) {
+            //the initial i/j differences between Num[0][0] to num at correct position after rotation
+            //is 0,matrix.length-1;
+            let iDiff = 0;
+            let jDiff = matrix.length - 1;
+            let temp = null;
+            let secondTemp = null;
+            //from outer to inner
+            let numOfTurns = 1;
+            let i = 0;
+            let diffOfJOnChangeTurn = 0;
+            //4 corners of a square
+            let numOfCycle = 4;
+
+            do {
+                for(let j = diffOfJOnChangeTurn; j < matrix.length - 1 - diffOfJOnChangeTurn; j++){
+                    let currentI = i;
+                    let currentJ = j;
+                    for(let currentNumCycle = 0; currentNumCycle < numOfCycle; currentNumCycle++){
+                        debugger;
+                        let newIDiff = iDiff - currentI + currentJ;
+                        let newJDiff = jDiff - currentI - currentJ;
+                        temp = matrix[currentI + newIDiff][currentJ + newJDiff];
+                        if(secondTemp !== null){
+                            matrix[currentI + newIDiff][currentJ + newJDiff] = secondTemp;
+                        } else {
+                            matrix[currentI + newIDiff][currentJ + newJDiff] = matrix[currentI][currentJ];
+                        }
+
+                        currentI = currentI + newIDiff;
+                        currentJ = currentJ + newJDiff;
+                        secondTemp = temp;
+                    }
+                    secondTemp = null;
+                }
+                numOfTurns++;
+                i++;
+                diffOfJOnChangeTurn++;
+            } while (numOfTurns <= matrix.length-2);
+
+            return matrix;
+        };
+    </script>
+</head>
+<body></body>

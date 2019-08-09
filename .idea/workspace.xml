@@ -18,20 +18,21 @@
           <entry key="project.open.time.0" value="7" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="html" value="15" />
+          <entry key="html" value="16" />
           <entry key="js" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="15" />
+          <entry key="HTML" value="16" />
           <entry key="JavaScript" value="11" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
@@ -39,13 +40,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="6" />
-          <entry key="html" value="1727" />
+          <entry key="html" value="1795" />
           <entry key="js" value="3502" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1727" />
+          <entry key="HTML" value="1795" />
           <entry key="JavaScript" value="3502" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
@@ -55,10 +56,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LetterCombinationsOfPhoneNumber/index.html">
+        <entry file="file://$PROJECT_DIR$/rotate-image/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            <state relative-caret-position="204">
+              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -97,6 +98,7 @@
         <option value="$PROJECT_DIR$/add two numbers/index.html" />
         <option value="$PROJECT_DIR$/longest substring without repeating characters/index.html" />
         <option value="$PROJECT_DIR$/LetterCombinationsOfPhoneNumber/index.html" />
+        <option value="$PROJECT_DIR$/rotate-image/index.html" />
       </list>
     </option>
   </component>
@@ -107,9 +109,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2852" />
-    <option name="width" value="1609" />
-    <option name="height" value="1453" />
+    <option name="x" value="2651" />
+    <option name="width" value="1810" />
+    <option name="height" value="1455" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -189,17 +191,18 @@
       <workItem from="1562476876564" duration="13306000" />
       <workItem from="1563295045198" duration="6938000" />
       <workItem from="1564901631397" duration="849000" />
+      <workItem from="1565250306779" duration="3229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74900000" />
+    <option name="totallyTimeSpent" value="78129000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2453" y="0" width="919" height="830" extended-state="0" />
+    <frame x="2338" y="0" width="1034" height="831" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2891986" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14241803" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -400,6 +403,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rotate-image/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
         </state>
       </provider>
     </entry>
