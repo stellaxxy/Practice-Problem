@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript">
+        /**
+         * @param {number} x
+         * @return {boolean}
+         */
+        var isPalindrome = function(x) {
+            let numStr = x.toString();
+
+            for(let i = 0; i < Math.floor(numStr.length/2); i++){
+                if(numStr[i] !== numStr[numStr.length-i-1]){
+                    return false;
+                }
+            }
+            return true;
+        };
+    </script>
+</head>
+<body></body>
