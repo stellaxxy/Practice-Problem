@@ -14,6 +14,31 @@
             }
             return nums.length;
         };
+
+        var searchInsert2 = function(nums, target) {
+            if(nums.length === 0 || nums[0] === target || nums[0] > target){
+                return 0;
+            }
+
+            let startIndex = 0;
+            let endIndex = nums.length-1;
+
+            while(startIndex < endIndex){
+                let middleIndex = Math.floor((startIndex + endIndex) / 2);
+                if(nums[middleIndex] === target){
+                    return middleIndex;
+                } else if(nums[middleIndex] > target) {
+                    endIndex = middleIndex;
+                } else {
+                    startIndex = middleIndex + 1;
+                }
+            }
+
+            if(nums[startIndex] < target){
+                return startIndex + 1;
+            }
+            return startIndex;
+        };
     </script>
 </head>
 <body></body>
