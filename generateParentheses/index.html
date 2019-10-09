@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript">
+        /**
+         * @param {number} n
+         * @return {string[]}
+         */
+        var generateParenthesis = function(n, string, result, leftParen, rightParen) {
+            let output = result || [];
+            let s = string || "";
+            let left = leftParen || 0;
+            let right = rightParen || 0;
+
+            if(s.length === 2*n){
+                output.push(s);
+            }
+
+            if(left < n){
+                generateParenthesis(n, s.concat("("), output, left+1, right);
+            }
+            if(left > right){
+                generateParenthesis(n, s.concat(")"), output, left, right+1);
+            }
+
+            return output;
+        };
+    </script>
+</head>
+<body></body>

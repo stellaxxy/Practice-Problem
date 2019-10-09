@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript">
+        /**
+         * @param {number} n
+         * @return {number}
+         */
+        var climbStairs = function(n) {
+            let note = {};
+            return findWaysToReach(n, note);
+        };
+
+        function findWaysToReach(n, note){
+            if(n === 1) {
+                note[1] = 1;
+                return 1;
+            }
+            if(n === 2) {
+                note[2] = 2;
+                return 2;
+            }
+
+            if(!note[n]){
+                note[n] = findWaysToReach(n-1, note) + findWaysToReach(n-2, note);
+            }
+
+            return note[n];
+        }
+    </script>
+</head>
+<body></body>

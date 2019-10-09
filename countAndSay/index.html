@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript">
+        /**
+         * @param {number} n
+         * @return {string}
+         */
+        var countAndSay = function(n, memo) {
+           
+            let note = memo || {};
+
+            if(n === 1){
+                note[1] = "1";
+                return note[n];
+            }
+
+            if(!note[n]){
+                let count = 0;
+                let char = null;
+                let s = "";
+                let prev = countAndSay(n-1, note);
+
+                for(let i = 0; i < prev.length; i++){
+                    if(char === null){
+                        char = prev[i];
+                        count++;
+                    } else if(char === prev[i]){
+                        count++;
+                    } else {
+                        s += `${count}${char}`;
+                        count = 1;
+                        char = prev[i];
+                    }
+                    if(i === prev.length - 1){
+                        s += `${count}${char}`;
+                    }
+                }
+
+                note[n] = s;
+            }
+
+            return note[n];
+        };
+    </script>
+</head>
+<body></body>
