@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript">
+        /**
+         * @param {string} s
+         * @return {string}
+         */
+        var longestPalindrome = function(s, reverse) {
+            debugger;
+            let output = "";
+            let start = null;
+            let end = null;
+
+            for(let index = 0; index < s.length; index++){
+                let leftIndex = index;
+                let innerIndex = index;
+                let recorded = false;
+
+                for(let rightIndex = s.length - 1; rightIndex >= 0; rightIndex--){
+                    if(rightIndex <= leftIndex){
+                        if(innerIndex - index > end - start){
+                            start = index;
+                            end = innerIndex;
+                        }
+                        break;
+                    }
+                    if(s[leftIndex] === s[rightIndex]){
+                        if(!recorded){
+                            innerIndex = rightIndex;
+                            recorded = true;
+                        }
+                        leftIndex++;
+                    } else {
+                        recorded = false;
+                        leftIndex = index;
+                        innerIndex = index;
+                    }
+                }
+            }
+
+            output = s.slice(start, end+1);
+
+            if(!reverse){
+                let strArr = s.split("");
+                let reverseArr = strArr.reverse();
+                let reverseStr = reverseArr.join("");
+                let reverseOutput = longestPalindrome(reverseStr, true);
+                if(reverseOutput.length > output.length){
+                    output = reverseOutput;
+                }
+            }
+
+            return output;
+        };
+
+        /*
+        var longestPalindrome = function(s) {
+    var res = "",
+        i = 0;
+
+    while(i < s.length) {
+        var isInt = i.toString().indexOf('.'),
+            start = isInt == -1 ? i : Math.floor(i),
+            end = isInt == -1 ? i : Math.ceil(i),
+            len = res.length;
+
+        while(start >= 0 && end < s.length && s[start] === s[end]) {
+            if(end - start + 1 > len) {
+                res = s.substring(start, end+1);
+            }
+            start--;
+            end++;
+        }
+        i+=0.5;
+    }
+    return res;
+};
+
+         */
+    </script>
+</head>
+<body></body>

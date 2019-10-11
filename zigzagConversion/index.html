@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript">
+        /**
+         * @param {string} s
+         * @param {number} numRows
+         * @return {string}
+         */
+        var convert = function(s, numRows) {
+            let result = [];
+            let rowNum = 0;
+            let goUp = false;
+
+            for(const c of s){
+                if(!result[rowNum]){
+                    result[rowNum] = c;
+                } else {
+                    result[rowNum] += c;
+                }
+
+                if(rowNum === numRows - 1){
+                    rowNum--;
+                    goUp = true;
+                } else if(rowNum === 0){
+                    goUp = false;
+                    rowNum++;
+                } else if(goUp){
+                    rowNum--;
+                } else if(!goUp){
+                    rowNum++;
+                }
+
+            }
+
+            let resultStr = "";
+            result.map(item => {resultStr += item});
+
+            return resultStr;
+        };
+    </script>
+</head>
+<body></body>
